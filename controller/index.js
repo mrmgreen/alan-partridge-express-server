@@ -14,5 +14,5 @@ module.exports = function(req, res) {
   ];
   const randomBetween1And9 = Math.floor((Math.random() * 10));
 
-  res.send(quotes[randomBetween1And9]);
+  res.json(JSON.stringify(quotes[randomBetween1And9]));
 }
